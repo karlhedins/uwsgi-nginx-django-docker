@@ -10,7 +10,7 @@ Key points of this setup:
 - NGINX for static files, uWSGI for the Django app
 - Supervisord manages uWSGI and NGINX processes within the container
 - Sane default configurations thanks to [uwsgi-nginx-docker](https://github.com/tiangolo/uwsgi-nginx-docker)
-- Configurable number of processes for uWSGI and Django by env variables, so that you don't have to rebuild the container when changing these.
+- Configurable number of processes for uWSGI and NGINX by env variables, so that you don't have to rebuild the container when changing these.
 
 Here is a list of env variables that can be set to dynamically configure the container at run time in `docker-compose.yml`, or if preferred at buildtime in `Dockerfile`.
 
