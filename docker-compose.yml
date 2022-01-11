@@ -1,0 +1,9 @@
+version: "3"
+services:
+  web:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    image: uwsgi-nginx-django
+    ports:
+      - "0.0.0.0:80:80"

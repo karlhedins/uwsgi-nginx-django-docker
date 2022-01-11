@@ -1,0 +1,5 @@
+# Django staic files:
+app/static_collected/
+
+# Sqlite
+app/db.sqlite3
